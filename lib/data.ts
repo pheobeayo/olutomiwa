@@ -23,7 +23,7 @@ export const nodes = ["Akure", "Ibadan", "Lagos"] as const;
 export const contact = {
   email: "olutomiwasanni@gmail.com",
   phone: "+234 805 765 2795",
-  linkedin: "https://www.linkedin.com/in/olutomiwa-sanni",
+  linkedin: "https://www.linkedin.com/in/olutomiwasanni/",
   location: "Nigeria",
   replyWindow: "two working days",
 } as const;
