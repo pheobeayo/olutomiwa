@@ -13,7 +13,7 @@ export function LogoMarquee() {
         <p className="mt-3 text-ink-dark/60">Selected projects and the teams behind them</p>
       </div>
 
-      <div className="pause-on-hover relative mt-12 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+      <div className="pause-on-hover relative mt-12 overflow-hidden mask-[linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
         <div className="marquee-track flex w-max items-center">
           {[0, 1].map((copy) => (
             <ul key={copy} aria-hidden={copy === 1} className="flex shrink-0 items-center">

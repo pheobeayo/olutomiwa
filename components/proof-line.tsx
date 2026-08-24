@@ -1,14 +1,11 @@
 import { proofLine } from "@/lib/data";
 
-/*
-  The positioning line, then the proof band:
-  a single quiet row of three facts, no adjectives, no heading.
-*/
+
 export function ProofLine() {
   return (
     <section className="bg-paper px-6 pt-4 pb-16 md:pb-20">
       <div className="mx-auto max-w-5xl">
-        <p className="mx-auto max-w-3xl text-center text-2xl leading-[1.25] font-semibold tracking-[-0.02em] text-ink-dark text-balance sm:text-3xl md:text-4xl">
+        <p className="mx-auto max-w-3xl text-center text-2xl leading-tight font-semibold tracking-[-0.02em] text-ink-dark text-balance sm:text-3xl md:text-4xl">
           I keep corporate networks and systems available, secure and
           understood
         </p>

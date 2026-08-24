@@ -1,7 +1,3 @@
-/* ───────────────────────────────────────────────────────────────
-   CONTENT — everything the site says lives here.
-   Sourced from the CV: SANNI Olutomiwa Akintunde, IT Support.
-   ─────────────────────────────────────────────────────────────── */
 
 export const person = {
   name: "Olutomiwa Sanni",
@@ -166,5 +162,5 @@ export const certifications = [
 export const education = {
   degree: "B.Sc. (Hons) Mechanical Engineering",
   institution: "Obafemi Awolowo University, Ile-Ife",
-  years: "2008 – 2014",
+  years: "2014",
 } as const;

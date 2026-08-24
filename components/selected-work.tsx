@@ -19,7 +19,7 @@ export function SelectedWork() {
           Selected experience
         </h2>
 
-        <p className="mt-6 max-w-3xl text-2xl leading-[1.25] font-semibold tracking-[-0.02em] text-accent-deep text-balance sm:text-3xl md:text-4xl">
+        <p className="mt-6 max-w-3xl text-2xl leading-tight font-semibold tracking-[-0.02em] text-accent-deep text-balance sm:text-3xl md:text-4xl">
           &ldquo;When the infrastructure is right, nobody notices it. That is
           the whole job.&rdquo;
         </p>

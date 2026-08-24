@@ -3,16 +3,11 @@ import { NavProvider } from "@/context/nav-context";
 import { CustomCursor } from "@/components/custom-cursor";
 import { contact, person } from "@/lib/data";
 
-/*
-  Hanken Grotesk is self-hosted via Fontsource rather than next/font/google,
-  so builds never depend on reaching fonts.gstatic.com and visitors never
-  make a third-party request. The font files ship with the bundle.
-*/
 import "@fontsource-variable/hanken-grotesk";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://olutomiwasanni.com"),
+  metadataBase: new URL("https://olutomiwa.vercel.app/"),
   title: {
     default: "Olutomiwa Sanni | IT Support & Network Infrastructure",
     template: "%s",
@@ -21,7 +16,7 @@ export const metadata: Metadata = {
     "IT professional with 10+ years in technical support, network infrastructure management and IT operations. CCNA and HCIA certified.",
 };
 
-/* Person schema — makes the name resolve to this site, not to LinkedIn. */
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",

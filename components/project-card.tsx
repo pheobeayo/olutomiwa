@@ -5,11 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import type { Project } from "@/lib/data";
 
-/*
-  Case card — the image is the card. No container, no background panel,
-  no letterboxing: the artwork bleeds to the edges of its cell.
-  Hover washes the art back and brings the tags, title and arrow forward.
-*/
+
 export function ProjectCard({
   project,
   index,
@@ -32,7 +28,7 @@ export function ProjectCard({
       aria-label={`Open case: ${project.title}`}
       className="group relative block w-full scroll-mt-28 text-left"
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
+      <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl">
         <Image
           src={project.image}
           alt={project.title}

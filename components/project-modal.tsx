@@ -6,11 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
 import type { Project } from "@/lib/data";
 
-/*
-  Case modal (images 3/6/9/12/15/18, polished):
-  category header + close, tag chips, thumbnail beside the full story —
-  stacking on mobile, scrollable when tall, Escape / backdrop to close.
-*/
+
 export function ProjectModal({
   project,
   onClose,
@@ -40,7 +36,7 @@ export function ProjectModal({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="fixed inset-0 z-[70] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm sm:p-6"
+          className="fixed inset-0 z-70 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm sm:p-6"
         >
           <motion.div
             key="panel"
@@ -88,7 +84,7 @@ export function ProjectModal({
 
             {/* Thumbnail + story */}
             <div className="grid gap-6 sm:grid-cols-[260px_1fr] sm:gap-8">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl sm:aspect-auto sm:h-52">
+              <div className="relative aspect-4/3 overflow-hidden rounded-2xl sm:aspect-auto sm:h-52">
                 <Image
                   src={project.image}
                   alt={project.title}

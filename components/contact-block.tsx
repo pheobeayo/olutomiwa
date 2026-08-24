@@ -15,7 +15,7 @@ export function ContactBlock() {
       </h2>
       <a
         href={`mailto:${contact.email}`}
-        className="rounded-full bg-accent px-8 py-4 text-sm font-semibold tracking-[0.1em] text-ground-deep uppercase transition-transform hover:-translate-y-0.5"
+        className="rounded-full bg-accent px-8 py-4 text-sm font-semibold tracking-widest text-ground-deep uppercase transition-transform hover:-translate-y-0.5"
       >
         Get in touch
       </a>

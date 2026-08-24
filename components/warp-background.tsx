@@ -2,10 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-/*
-  Canvas recreation of the hero light-burst: long beams + fast streaks
-  radiating from a hot core, with a motion-blur trail.
-*/
+
 export function WarpBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 

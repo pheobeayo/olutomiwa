@@ -8,20 +8,7 @@ import { useScrolled } from "@/hooks/use-scrolled";
 import { contact, navTiles, nodes, person } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
-/*
-  Two poles and an overlay:
-    PORTFOLIO (a destination) · nosayaba (home) · ABOUT ● (a container)
 
-  Every tile is a real <a href> in the markup so the overlay is crawlable.
-  Focus is trapped while open; Escape, click-outside and pointer-leave close it.
-
-  Closing on pointer-leave is deliberately defensive:
-    - only for real mouse pointers (a tap must never trigger it)
-    - ignored for a moment after opening, so the width/padding reflow
-      cannot bounce the panel shut under a stationary cursor
-    - delayed slightly and cancelled on re-entry, so clipping an edge
-      on the way to a tile does not close it
-*/
 
 const LEAVE_GRACE_MS = 260; // ignore leaves for this long after opening
 const LEAVE_DELAY_MS = 180; // wait this long before acting on a leave
