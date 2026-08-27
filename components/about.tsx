@@ -16,12 +16,13 @@ export function About() {
           transition={{ type: "spring", stiffness: 60, damping: 16 }}
           className="text-3xl leading-[1.2] font-semibold tracking-[-0.02em] text-ink-dark sm:text-4xl md:text-[2.9rem]"
         >
-          I am Olutomiwa Sanni; An IT professional with ten years in{" "}
+          I am Olutomiwa Sanni — an IT professional with ten years in{" "}
           <span className={grey}>technical support</span>,{" "}
           <span className={grey}>network infrastructure</span> and{" "}
-          <span className={grey}>IT operations</span>. I keep corporate systems
-          available, enforce the backup and security routines that make
-          continuity real, and lead the teams that deliver it.
+          <span className={grey}>IT operations</span>, and a{" "}
+          <span className={grey}>frontend developer</span>. I keep corporate
+          systems available, enforce the backup and security routines that make
+          continuity real, and build the interfaces people use to run them.
         </motion.h2>
 
         <motion.div

@@ -1,16 +1,20 @@
+/* ───────────────────────────────────────────────────────────────
+   CONTENT — everything the site says lives here.
+   Sourced from the CV: SANNI Olutomiwa Akintunde, IT Support.
+   ─────────────────────────────────────────────────────────────── */
 
 export const person = {
   name: "Olutomiwa Sanni",
   fullName: "Sanni Olutomiwa Akintunde",
   wordmark: "olutomiwa",
-  role: "IT Support & Network Infrastructure Manager",
+  role: "IT Support, Network Infrastructure & Frontend Developer",
   positioning:
-    "Olutomiwa Sanni: IT operations and network infrastructure. Ten years keeping corporate systems available, secure and understood — from the switch in the rack to the report on the desk.",
+    "Olutomiwa Sanni: IT operations, network infrastructure and frontend development. Ten years keeping corporate systems available and secure — and building the interfaces people use to run them.",
 } as const;
 
 /* The ABOUT overlay */
 export const navTiles = [
-  { label: "About", description: "Ten years of IT operations and infrastructure.", href: "/#about" },
+  { label: "About", description: "Infrastructure, operations and frontend.", href: "/#about" },
   { label: "Experience", description: "Where the work has been done.", href: "/#work" },
   { label: "Capabilities", description: "What I can be trusted with.", href: "/#capabilities" },
   { label: "Portfolio", description: "The full record of engagements.", href: "/portfolio" },
@@ -23,7 +27,7 @@ export const nodes = ["Akure", "Ibadan", "Lagos"] as const;
 export const contact = {
   email: "olutomiwasanni@gmail.com",
   phone: "+234 805 765 2795",
-  linkedin: "https://www.linkedin.com/in/olutomiwasanni/",
+  linkedin: "https://www.linkedin.com/in/olutomiwa-sanni",
   location: "Nigeria",
   replyWindow: "two working days",
 } as const;
@@ -31,7 +35,7 @@ export const contact = {
 /* The proof band: three facts, no adjectives */
 export const proofLine = [
   "10+ years in IT operations",
-  "99.5% system uptime maintained",
+  "Infrastructure & frontend development",
   "CCNA · HCIA certified",
 ] as const;
 
@@ -138,6 +142,13 @@ export const capabilities = [
     body: "Backup procedures and security protocols enforced consistently across managed systems, with disaster recovery routines implemented and regularly tested rather than assumed — so continuity holds when something actually fails.",
   },
   {
+    title: "Frontend Development",
+    /* TODO: confirm the stack, and add at least one frontend project to
+       `projects` — the CV lists none, so this card currently makes a claim
+       nothing else on the site evidences. */
+    body: "I build the interfaces that sit on top of the infrastructure — dashboards, internal tools and client-facing sites. Working in [HTML, CSS, JavaScript and React], with an eye for the operational detail that comes from a decade of supporting the systems underneath.",
+  },
+  {
     title: "Team Leadership & Process Optimisation",
     body: "Leading cross-functional technical teams with training, coaching and hands-on support on the hard problems. Operational procedures I have introduced improved departmental efficiency by 20% and cut customer response times by 25%.",
   },
@@ -162,5 +173,5 @@ export const certifications = [
 export const education = {
   degree: "B.Sc. (Hons) Mechanical Engineering",
   institution: "Obafemi Awolowo University, Ile-Ife",
-  years: "2014",
+  years: "2008 – 2014",
 } as const;
